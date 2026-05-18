@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #276dd7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 550px;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+    color: #111;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.link-nav {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #0076ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-nav:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #0076ff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #0076ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.feedback-card {
+    background: #f8fafc;
+    border-left: 4px solid #0076ff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.feedback-card strong {
+    display: block;
+    font-size: 1.05rem;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.feedback-card p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Botão de remover */
+.btn-remove {
+    background-color: #ff4d4d;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    width: 100%
+}
+
+.btn-remove:hover {
+    background-color: #cc0000;
+}
+
+.no-feedback {
+    color: #777;
+    text-align: center;
+    font-style: italic;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    text-align: center;
+}

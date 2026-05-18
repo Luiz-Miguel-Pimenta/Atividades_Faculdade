@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form-feedback</title>
+</head>
+<body>
+    <div class="container">
+        <h1>FeedBack do Curso</h1>
+        <p class="subtitle">Mande seu feedback do que achou sobre nosso curso</p>
+        
+        <form action="/feedbacks/enviar" method="post">
+            <input id="inputName" type="text" name="name" placeholder="Digite seu nome" required>
+            <textarea id="TextFeedback" name="feedback" placeholder="Escreva seu comentário sobre o curso" required></textarea>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
